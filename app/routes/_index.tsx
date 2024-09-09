@@ -1,13 +1,9 @@
-import type { MetaFunction } from "@remix-run/node";
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Moneybara -- best friend to save your money" },
-    { name: "description", content: "A capybara bank saves money for you." },
-  ];
-};
+import { changeLanguage } from "i18next";
+import { useTranslation } from "react-i18next";
+import { useChangeLanguage } from "remix-i18next/react";
 
 export default function Index(): JSX.Element {
+  const { t, i18n } = useTranslation();
   return (
     <div className="font-sans p-4">
       <h1 className="text-3xl">Welcome to Remix</h1>
@@ -43,6 +39,13 @@ export default function Index(): JSX.Element {
           </a>
         </li>
       </ul>
+      <span>{t("app.name")}</span>
+      <button
+        className="border-2 border-concrete-800"
+        onClick={() => i18n.changeLanguage("zh-TW")}
+      >
+        {t("lng.change_to_zh")}
+      </button>
     </div>
   );
 }

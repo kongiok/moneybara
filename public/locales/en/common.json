@@ -1,0 +1,11 @@
+{
+  "app": {
+    "name": "Moneybara",
+    "description": "A capybara bank saves money for you"
+  },
+  "lng": {
+    "change_to_zh": "臺灣中文",
+    "change_to_tw": "臺灣臺語",
+    "change_to_en": "English"
+  }
+}
