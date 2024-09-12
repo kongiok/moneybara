@@ -37,6 +37,10 @@ export const meta: MetaFunction = ({
   ];
 };
 
+const App = () => {
+  return <Outlet />;
+};
+
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   const { locale } = useLoaderData<typeof loader>();
   const { i18n } = useTranslation();
@@ -49,20 +53,19 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       <Links />
     </head>
   );
+  const Body: FC = () => (
+    <body>
+      {children}
+      <ScrollRestoration />
+      <Scripts />
+    </body>
+  );
   return (
     <html lang={locale} dir={i18n.dir()}>
       <Head />
-      <body>
-        {children}
-        <ScrollRestoration />
-        <Scripts />
-      </body>
+      <Body />
     </html>
   );
-};
-
-const App = () => {
-  return <Outlet />;
 };
 
 export default App;

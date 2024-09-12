@@ -2,5 +2,15 @@
   "app": {
     "name": "水豬簿仔",
     "description": "共你記數 ê 水豬"
+  },
+  "sites": {
+    "giok": {
+      "name": "鈺",
+      "description": "議題團體"
+    },
+    "github": {
+      "name": "GitHub",
+      "description": "阮將公開程式碼囥佇咧 GitHub"
+    }
   }
 }
