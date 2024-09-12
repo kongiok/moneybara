@@ -7,5 +7,22 @@
     "change_to_zh": "臺灣中文",
     "change_to_tw": "臺灣臺語",
     "change_to_en": "English"
+  },
+  "sites": {
+    "giok": {
+      "name": "Giok Org",
+      "description": "Non-profit advocacy organization"
+    },
+    "github": {
+      "name": "GitHub",
+      "description": "We've open-sourced Moneybara on GitHub"
+    }
+  },
+  "nav": {
+    "app": {
+      "name": "App",
+      "description": "The Moneybara app"
+    },
+    "": ""
   }
 }

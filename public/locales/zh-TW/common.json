@@ -2,5 +2,15 @@
   "app": {
     "name": "水豚賬本",
     "description": "幫你記賬的水豚君！"
+  },
+  "sites": {
+    "giok": {
+      "name": "鈺",
+      "description": "倡議組織，非盈利取向"
+    },
+    "github": {
+      "name": "GitHub",
+      "description": "我們將水豚賬本開源在 GitHub"
+    }
   }
 }

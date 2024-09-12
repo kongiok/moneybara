@@ -4,7 +4,9 @@ export default {
   darkMode: ["class"],
   content: [
     "./app/routes/{**,.client,.server}/*.{ts,tsx}",
-    "./app/components/{**,.client,.server}/*.{ts,tsx}",
+    "./app/components/atoms/{**,.client,.server}/*.{ts,tsx}",
+    "./app/components/molecules/{**,.client,.server}/*.{ts,tsx}",
+    "./app/components/organisms/{**,.client,.server}/*.{ts,tsx}",
     "./app/layouts/{**,.client,.server}/*.{ts,tsx}",
     // "./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}",
   ],
