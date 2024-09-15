@@ -12,7 +12,7 @@ export default function Index(): JSX.Element {
   });
   const logo: Logo = {
     title: t("app.name"),
-    src: "",
+    src: "/moneybara.svg",
     description: t("app.description"),
   };
   const navItems: Link[] = [
@@ -20,6 +20,16 @@ export default function Index(): JSX.Element {
       title: nav("app.name"),
       description: nav("app.description"),
       url: "/app",
+    },
+    {
+      title: nav("reports.name"),
+      description: nav("reports.description"),
+      url: "/app/reports",
+    },
+    {
+      title: nav("accounts.name"),
+      description: nav("accounts.description"),
+      url: "/app/accounts",
     },
   ];
   const HeroSection: FC = () => (
@@ -31,7 +41,17 @@ export default function Index(): JSX.Element {
   );
   return (
     <Landing
-      header={<Header navItems={navItems} logo={logo} />}
+      header={
+        <Header
+          navItems={navItems}
+          logo={logo}
+          primaryBtn={{
+            title: nav("join.name"),
+            description: nav("join.description"),
+            url: "/app/login",
+          }}
+        />
+      }
       footer={
         <Footer
           org={{
