@@ -12,5 +12,19 @@
       "name": "GitHub",
       "description": "阮將公開程式碼囥佇咧 GitHub"
     }
+  },
+  "nav": {
+    "app": {
+      "name": "records",
+      "description": "Record your financial transactions"
+    },
+    "reports": {
+      "name": "reports",
+      "description": "View your financial reports"
+    },
+    "settings": {
+      "name": "settings",
+      "description": "Your app settings"
+    }
   }
 }

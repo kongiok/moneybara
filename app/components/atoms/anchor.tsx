@@ -21,7 +21,7 @@ const UnderlinedAnchor: FC<AnchorProps> = ({
 }) => (
   <Link
     to={url}
-    className={`relative text-foreground no-underline font-bold  before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${className?.text}`}
+    className={`capitalize relative text-foreground no-underline font-bold  before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-foreground before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${className?.text}`}
     aria-label={description}
     title={description}
   >

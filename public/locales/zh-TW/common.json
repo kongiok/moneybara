@@ -12,5 +12,19 @@
       "name": "GitHub",
       "description": "我們將水豚賬本開源在 GitHub"
     }
+  },
+  "nav": {
+    "app": {
+      "name": "record",
+      "description": "Record your financial transactions"
+    },
+    "reports": {
+      "name": "report",
+      "description": "View your financial reports"
+    },
+    "settings": {
+      "name": "settings",
+      "description": "Your app settings"
+    }
   }
 }

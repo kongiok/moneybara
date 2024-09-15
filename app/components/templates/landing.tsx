@@ -5,7 +5,7 @@ const Landing: FC<{
   children: ReactNode;
   footer?: ReactNode;
 }> = ({ header, children, footer }) => (
-  <div className="min-h-svh w-svw flex flex-col m-auto px-8 py-4">
+  <div className="h-full w-dvw overflow-hidden flex flex-col px-8 py-4 gap-2">
     {header}
     <main className="flex-1 w-full min-h-[65vh] h-full flex flex-col items-center">
       {children}

@@ -20,9 +20,32 @@
   },
   "nav": {
     "app": {
-      "name": "App",
-      "description": "The Moneybara app"
+      "name": "records",
+      "description": "Record your financial transactions"
     },
-    "": ""
+    "reports": {
+      "name": "reports",
+      "description": "View your financial reports"
+    },
+    "settings": {
+      "name": "settings",
+      "description": "Your app settings"
+    },
+    "accounts": {
+      "name": "accounts",
+      "description": "Your accounts avalible"
+    },
+    "login": {
+      "name": "login",
+      "description": "Login to your account"
+    },
+    "logout": {
+      "name": "logout",
+      "description": "Logout from your account"
+    },
+    "join": {
+      "name": "join us",
+      "description": "Join Moneybara, it's free"
+    }
   }
 }
