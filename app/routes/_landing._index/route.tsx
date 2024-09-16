@@ -5,7 +5,7 @@ import Header from "~/components/organisms/header";
 import Landing from "~/components/templates/landing";
 import { Link, Logo } from "~/lib/type";
 
-export default function Index(): JSX.Element {
+const IndexPage: FC = (): JSX.Element => {
   const { t } = useTranslation();
   const { t: nav } = useTranslation("common", {
     keyPrefix: "nav",
@@ -65,4 +65,6 @@ export default function Index(): JSX.Element {
       <HeroSection />
     </Landing>
   );
-}
+};
+
+export default IndexPage;
